@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>wallpaper</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/vegas.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script>
+    $(function(){
+      $('#example, body').vegas({
+        delay: 60000,
+        transitionDuration: 8000,
+        slides: [
+          { src: 'img/kv1.jpg' },
+          { src: 'img/kv2.jpg' },
+          { src: 'img/kv3.jpg' },
+          { src: 'img/tiser.jpg' }
+        ],
+        animation: 'random',
+        overlay: 'img/overlays/10.png'
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="example">
+
+    </div>
+    <img id="logo" src="img/logo.png">
+    <img id="grd1" src="img/grd.png">
+    <img id="ketten" src="img/ketten.png">
+  </body>
+</html>

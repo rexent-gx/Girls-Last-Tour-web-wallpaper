@@ -1,0 +1,171 @@
+/*init*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing=&quot;0&quot;' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+#example {
+
+}
+
+#logo {
+  position:absolute;
+  padding-bottom: 25px;
+  bottom:15px;
+  left:30px;
+  width: 350px;
+  z-index: 2
+}
+
+#grd1 {
+  position:absolute;
+  padding-bottom: 25px;
+  bottom: 8px;
+  animation: grd1 linear 45s infinite;
+}
+
+@keyframes grd1 {
+    0% {
+        transform: translate(-1960px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#ketten {
+  position:absolute;
+  padding-bottom: 25px;
+  bottom:13px;
+  right: 130px;
+  animation: ketten linear 15s infinite, hurueru linear 1.5s infinite;
+}
+
+@keyframes ketten {
+    0% {
+        transform: translate(0, 0) rotate(2deg);
+    }
+    10% {
+        transform: translate(0, -5px) rotate(3deg);
+    }
+    11% {
+        transform: translate(0, -6px) rotate(0deg);
+    }
+    22% {
+        transform: translate(0, -6px) rotate(0deg);
+    }
+    23% {
+        transform: translate(0, -3px) rotate(-2deg);
+    }
+    30% {
+        transform: translate(0, -3px) rotate(0deg);
+    }
+    40% {
+        transform: translate(0, -3px) rotate(0deg);
+    }
+    41% {
+        transform: translate(0, -4px) rotate(2deg);
+    }
+    58% {
+        transform: translate(0, -7px) rotate(3deg);
+    }
+    60% {
+        transform: translate(0, -7px) rotate(-1deg);
+    }
+    65% {
+        transform: translate(0, -7px) rotate(0deg);
+    }
+    72% {
+        transform: translate(0, -8px) rotate(6deg);
+    }
+    80% {
+        transform: translate(0, -13px) rotate(4deg);
+    }
+    83% {
+        transform: translate(0, -10px) rotate(-2deg);
+    }
+    95% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(2deg);
+    }
+}
+
+@keyframes hurueru {
+    0% {bottom: 13px; right: 130px;}
+    10% {bottom: 14px; right: 130px;}
+    20% {bottom: 12px; right: 130px;}
+    30% {bottom: 13px; right: 130px;}
+    40% {bottom: 13px; right: 130px;}
+    50% {bottom: 12px; right: 130px;}
+    60% {bottom: 13px; right: 130px;}
+    70% {bottom: 13px; right: 130px;}
+    80% {bottom: 12px; right: 130px;}
+    90% {bottom: 14px; right: 130px;}
+    100% {bottom: 13px; right: 130px;}
+
+
+.vegas-animation-slidedown {
+    animation: slidedown ease-out;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translate(0, -20%);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
